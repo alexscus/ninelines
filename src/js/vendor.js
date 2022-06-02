@@ -19,8 +19,4 @@ const scroll = new LocomotiveScroll({
 	smooth: true,
 });
 
-scroll.on("scroll", (args) => {
-	console.log(args.currentElements);
-});
-
 require("ninelines-ua-parser");
