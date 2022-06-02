@@ -1,0 +1,26 @@
+extends pug/base
+
+prepend vars
+	//- title = '<?= htmlspecialchars($title) ?>'
+	//- description = '<?= htmlspecialchars($description) ?>'
+	//- image = '<?= htmlspecialchars($image) ?>'
+
+append vars
+	//-
+
+block content
+	include pug/data
+
+	.site(data-scroll-container data-scroll-section='1')#section0.anchor
+		include pug/components/header
+
+		include pug/components/basic
+
+		include pug/pages/home
+
+		include pug/components/footer
+
+	include pug/components/preloader
+
+	include pug/components/analytics
+

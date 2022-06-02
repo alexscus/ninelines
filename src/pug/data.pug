@@ -1,0 +1,41 @@
+-
+	const data = {
+		header: {
+			links: {
+				logo: '#section0',
+			},
+			menu: [
+				{
+					url: '#scroll-1',
+					name: 'О себе'
+				},
+				{
+					url: '#two',
+					name: 'Резюме'
+				},
+				{
+					url: '#skills',
+					name: 'Навыки'
+				}
+			]
+		},
+
+		share: {
+			caption: 'Поделиться:',
+			list: ['fb', 'tw', 'vk', 'ok'],
+		},
+
+		body: {
+			title: 'гид&nbsp;по <br><span class="for-desktop">бережному</span><span class="for-devices">общению</span>',
+			read: 'Читать',
+		},
+
+		modal: {
+			close: 'Закрыть',
+		},
+	};
+
+script.
+	window.data = {
+		body: !{JSON.stringify(data.body)},
+	};

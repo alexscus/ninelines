@@ -1,0 +1,20 @@
+header.header(data-scroll="1" data-scroll-sticky="1" data-scroll-target="#section0")
+	div
+		a.header__logo(href=data.header.links.logo data-scroll-to)
+			//+svg("logo") error
+		button.header__burger.btn.js-burger(type="button")
+			span
+			span
+			span
+
+		nav.header__menu
+			.header__list
+				ul
+					each object, key in data.header.menu
+						li
+							a.header__link.js-to-anchor(
+								data-scroll-to="" data-scroll-id=object.url
+								href="#section"+key
+							)
+								!= object.name
+

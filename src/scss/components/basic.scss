@@ -1,0 +1,152 @@
+.basic {
+	width: 100%;
+	max-width: 1500px;
+	padding: 0 20px 200px;
+	margin: 295px auto 0;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+
+	p {
+		margin: 0 0 10px;
+	}
+
+	a {
+		color: $color-black;
+		border-bottom: 1px solid transparent;
+
+		&:hover {
+			border-color: $color-black;
+		}
+	}
+
+	&__social {
+		display: flex;
+		margin-top: 17px;
+
+		a {
+			display: block;
+			width: 25px;
+			height: 25px;
+			position: relative;
+			border: none;
+
+			&:hover {
+				opacity: 0.8;
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+			&.fb {
+				&:after {
+					@include sprite("fb");
+				}
+			}
+
+			&.vk {
+				&:after {
+					@include sprite("vk");
+				}
+			}
+
+			&.tg {
+				&:after {
+					@include sprite("tg");
+				}
+			}
+		}
+		a + a {
+			margin-left: 20px;
+		}
+	}
+
+	&__title {
+		font: 36px/50px $sf-pro-display-bold;
+		margin: 0 0 30px;
+	}
+
+	&__information {
+		max-width: 560px;
+
+		p {
+			line-height: 20px;
+		}
+	}
+
+	&__contacts {
+		max-width: 130px;
+		margin: 0 142px 0 0;
+		white-space: nowrap;
+
+		p {
+			margin: 0 0 14px;
+		}
+	}
+
+	@include devices {
+		max-width: 100%;
+		padding: 0 0 40px;
+		margin: 130px 0 0;
+		justify-content: space-between;
+		flex-direction: column;
+		gap: 10px;
+		position: relative;
+
+		&:after {
+			content: "";
+			@include sprite("bg-left-mobile");
+			position: absolute;
+			bottom: 0;
+			left: -17px;
+			width: 106px;
+			height: 34px;
+		}
+		&:before {
+			content: "";
+			@include sprite("bg-right-mobile");
+			position: absolute;
+			bottom: 0;
+			right: -20px;
+			width: 83px;
+			height: 114px;
+		}
+
+		&__social {
+			margin-top: 17px;
+
+			a + a {
+				margin-left: 20px;
+			}
+		}
+
+		&__title {
+			font-size: 28px;
+			line-height: 38px;
+			margin: 0 0 20px;
+		}
+
+		&__information {
+			max-width: 100%;
+
+			p {
+				line-height: 20px;
+			}
+		}
+
+		&__contacts {
+			max-width: 100%;
+			margin: 0;
+
+			p {
+				margin: 0 0 14px;
+			}
+		}
+	}
+}

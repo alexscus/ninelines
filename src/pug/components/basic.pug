@@ -1,0 +1,17 @@
+.basic
+	.basic__information
+		.title.basic__title(data-scroll data-scroll-speed="1" data-scroll-position="top" data-scroll-delay="0.05")
+			| Игооорь, #[br]
+			| html-верстальщик
+		p(data-scroll data-scroll-speed="3" data-scroll-position="top" data-scroll-delay="0.05")
+			| Как разработчик, я высоко ценю способность воплотить видение дизайнера в жизнь, что считаю очень полезным для бизнеса. Я получаю огромное удовлетворение, наблюдая за работой от идеи до дизайна, особенно когда она появляется в руках пользователя. Я считаю, что ориентированные на пользователя решения являются наиболее ценными цифровыми ресурсами будущего.
+	.basic__contacts(data-scroll data-scroll-direction="horizontal" data-scroll-speed="-10")
+		p #[a(href="mailto:mail@gmail.com") mail@gmail.com]
+		p #[a(href="tel:+79990000000") +7 (999) 000-00-00]
+		p
+			| г. Иннополис
+		.basic__social
+			a.fb(href="https://www.facebook.com/sharer.php?u=<?= htmlspecialchars($title) ?>")
+			a.vk(href="https://vk.com/share.php?url=<?= htmlspecialchars($title) ?>")
+			a.tg(href="https://t.me/share/url?url=<?= htmlspecialchars($title) ?>")
+

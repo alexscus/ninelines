@@ -1,0 +1,167 @@
+.home {
+	width: 100%;
+	max-width: 1500px;
+	padding: 0 20px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+
+	a {
+		border-bottom: 1px solid $color-blue;
+	}
+
+	a:hover {
+		border-color: transparent;
+	}
+
+	p {
+		margin: 0 0 6px;
+		line-height: 20px;
+	}
+
+	&__experience {
+		padding: 0;
+		max-width: 50%;
+	}
+
+	&__column + &__column {
+		margin: 54px 0 0;
+	}
+
+	&__position {
+		font-family: $sf-pro-display-bold;
+		line-height: 20px;
+		margin: 0 0 4px;
+	}
+
+	&__agency {
+		padding: 6px 0;
+		grid-template-columns: 40px auto;
+		display: grid;
+		align-items: center;
+		list-style: 16px;
+
+		& b {
+			padding: 0 4px 0 0;
+		}
+	}
+
+	&[data-loaded="true"] {
+		opacity: 1;
+	}
+
+	&__picture {
+		width: 296px;
+		height: 464px;
+		position: absolute;
+		left: 50%;
+		top: 250px;
+		&:after {
+			@include sprite("man");
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	@include devices {
+		flex-direction: column;
+		max-width: 100%;
+		min-width: 100%;
+		width: 100%;
+		padding: 0;
+
+		&__experience {
+			max-width: 100%;
+		}
+
+		&__column + &__column {
+			margin: 54px 0 0;
+		}
+
+		&__position {
+			line-height: 20px;
+			margin: 0 0 4px;
+		}
+
+		&__picture {
+			width: 119px;
+			height: 186px;
+			margin: 40px auto;
+			position: relative;
+			left: 0;
+			top: 0;
+			&:after {
+				@include sprite("man-mobile");
+			}
+		}
+	}
+}
+
+.home__education {
+	text-align: center;
+	padding: 0 40px;
+
+	@include devices {
+		text-align: left;
+		padding: 0;
+	}
+}
+
+.diploma {
+	&__column {
+		max-width: 190px;
+		padding: 0 20px;
+	}
+
+	&__column + &__column {
+		margin: 34px 0 0;
+	}
+
+	@include devices {
+		gap: 20px;
+		row-gap: 20px;
+
+		&__column {
+			position: relative;
+			padding: 50px 0 0;
+		}
+
+		&__column + &__column {
+			margin: 0;
+		}
+
+		&__wrap {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			gap: 20px;
+			text-align: center;
+			justify-content: center;
+		}
+	}
+	@media (max-width: 600px) {
+		&__wrap {
+			grid-template-columns: auto auto;
+		}
+	}
+	@media (max-width: 310px) {
+		&__wrap {
+			grid-template-columns: auto;
+		}
+	}
+}
+
+[class^="sprite-diploma"] {
+	margin: 0 0 6px;
+
+	@include devices {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+}

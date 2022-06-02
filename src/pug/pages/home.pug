@@ -1,0 +1,154 @@
+main.home
+	.home__experience
+		.title
+			| Опыт работы
+
+		.home__column(data-scroll data-scroll-direction="horizontal" data-scroll-speed="1")
+			p.date
+				| Июль 2019
+			.home__position.home__rhombus
+				| Freelance Designer #[.sprite-experience-romb-end]
+			p
+				| Independent Netherlands, Worldwide
+			p
+				| Available for a project or job in UX/UI, Visual and Product design. #[br]
+				| #[a(href='#') Commercial tryouts] #[br]
+				| #[a(href='#') Personal projects]
+
+		.home__column(data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1")
+			p.date
+				| Январь 2017 - Сентябрь 2018
+			.home__position.home__rhombus
+				| Digital Designer #[.sprite-experience-romb-blue-pink]
+			.home__agency
+				| #[.sprite-agency-ics] #[span #[b J Creative Solutions] Digital agency in Minsk, Belarus]
+			p
+				| Created visuals for digital marketing channels such as social media, promo web and online ads. Developed visual language from scratch or following the branding guidelines. Designed presentations #[br]
+				| for clients and indoor purposes. #[br]
+				| #[a(href='#') Agency projects]
+
+		.home__column(data-scroll data-scroll-direction="horizontal" data-scroll-speed="1")
+			p.date
+				| Март 2014 - Февраль 2017
+			.home__position.home__rhombus
+				| SEO Specialist &rarr; Lead SEO Specialist #[.sprite-experience-romb-orange-blue]
+			.home__agency
+				| #[.sprite-agency-oz] #[span #[b OZ.by] Online bookstore in Minsk, Belarus]
+			p
+				| Improved website performance and user experience of the biggest online bookstore OZ in Belarus, being a part of the marketing team, I interpreted Google Analytics data to IT, content and marketing colleagues. Advised on tech and content optimization strategy, automated processes, provided reports, increased organic traffic up to 150%. #[br]
+				| #[a(href='#') Annual company report 2016]
+
+		.home__column(data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1")
+			p.date
+				| Август 2012 - Ноябрь 2013
+			.home__position.home__rhombus
+				| Content Specialist #[.sprite-experience-romb-orange]
+			.home__agency
+				| #[.sprite-agency-21vek] #[span #[b 21vek.by] E-commerce store in Minsk, Belarus]
+			p
+				| Added and modified the product information, prepared images and text for the website, developed categories filters, ensure all info is correct in the catalogue with the goal of improving online shopper experience.
+
+		.home__column(data-scroll data-scroll-direction="horizontal" data-scroll-speed="1")
+			p.date
+				| Август 2011 - Ноябрь 2014
+			.home__position.home__rhombus
+				| Software Support Engineer #[.sprite-experience-romb-green]
+			.home__agency
+				| #[.sprite-agency-in] #[span #[b Integral] Microelectronics factory in Minsk, Belarus]
+			p
+				| Supported retail accounting system LS Trade, troubleshoot technical problems.
+
+	.home__picture(data-scroll  data-scroll-speed="2")
+
+	.home__education
+		.title
+			| Образование
+
+		.diploma__wrap
+			.diploma__column(data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1")
+				.sprite-diploma-end
+				p
+					| #[b Interface Design:] #[br]
+					| #[b Web &amp; Mobile]
+				p
+					| IT-Academy, 2020
+
+			.diploma__column(data-scroll data-scroll-direction="horizontal" data-scroll-speed="1")
+				.sprite-diploma-yellow
+				p
+					| #[b Fundamentals] #[br]
+					| #[b of Usability]
+				p
+					| Skillshare, Oct 2018
+
+			.diploma__column(data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1")
+				.sprite-diploma-purple
+				p
+					| #[b CG Artist]
+				p
+					| Polygon CG School, #[br]
+					| May-Sep 2017
+
+			.diploma__column(data-scroll data-scroll-direction="horizontal" data-scroll-speed="1")
+				.sprite-diploma-blue
+				p
+					| #[b Graphic Design]
+				p
+					| Belarusian State Academy of Arts, #[br]
+					| 2015 - 2017 #[br]
+					| Postgraduate Diploma
+
+			.diploma__column(data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1")
+				.sprite-diploma-orange
+				p
+					| #[b SEO Specialist]
+				p
+					| ARTOX Media, #[br]
+					| Jun-Aug 2012
+
+			.diploma__column(data-scroll data-scroll-direction="horizontal" data-scroll-speed="1")
+				.sprite-diploma-green
+				p
+					| #[b Information Technology Software]
+				p
+					| Belarusian State University of Informatics and Radioelectronics, #[br]
+					| 2011 - 2015 #[br]
+					| Bachelor&rsquo;s degree
+				p
+					| Polotsk State Economic #[br]
+					| College, 2007 - 2011 #[br]
+					| Associate&rsquo;s degree
+	.stance#section1.anchor
+
+	//- +lazyPicture({
+	//- 	src: `${baseDir}images/mem.jpg`,
+	//- 	alt: 'Мемчик',
+	//- }).home__picture#resume
+
+	//- p.home__text#about-myself
+	//- 	| Это стартовый шаблон для верстки!
+	//- 	br
+	//- 	br
+	//- 	| Обязательно посмотри реализацию:
+	//- 	br
+	//- 	| pug в папке #[code pug/(components|pages)],
+	//- 	br
+	//- 	| js в папке #[code js/(components|modules|pages)],
+	//- 	br
+	//- 	| scss в папке #[code scss/(components|pages)]
+	//- 	br
+	//- 	br
+	//- 	| Не используемые части кода/компонентов можно просто отключить (удалять не рекомендуется)
+	//- 	br
+	//- 	br
+	//- 	| Не забывай читать #[a(href="https://github.com/ninelines-team/ninelines-docs" target="_blank") документацию]!
+
+	//- //- picture.home__picture.home__picture--2#bye
+	//- +lazyPicture({
+	//- 	src: `${baseDir}images/mem-2.jpg`,
+	//- 	alt: 'Мемчик 2',
+	//- }, [
+	//- 	{
+	//- 		srcset: `${baseDir}images/mem-2.jpg`,
+	//- 	}
+	//- ]).home__picture.home__picture--2#skills

@@ -1,0 +1,48 @@
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	background: $color-alabaster;
+	z-index: 11;
+
+	&__image {
+		content: "";
+		@include sprite("preloader");
+		position: relative;
+		width: 591px;
+		height: 591px;
+		margin-top: -295px;
+		margin-left: -295px;
+		text-align: center;
+		animation: preloader-rotate 2s infinite linear;
+	}
+}
+
+@keyframes preloader-rotate {
+	0% {
+		top: 30%;
+		left: 30%;
+		transform: translate(var(--wwm), var(--wh));
+	}
+
+	100% {
+		top: 90%;
+		left: 70%;
+		transform: translate(var(--wh), var(--whm));
+	}
+}
+
+.loaded__hiding {
+	.site {
+		display: none;
+	}
+}
+
+.loaded {
+	.preloader {
+		display: none;
+	}
+}
